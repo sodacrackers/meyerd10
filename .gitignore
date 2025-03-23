@@ -1,0 +1,10 @@
+# Ignore everything in vendor/
+vendor/
+
+# Ignore everything in web/ except modules/
+web/*
+!web/modules/
+
+# Ignore everything in web/modules/ except custom/
+web/modules/*
+!web/modules/custom/
