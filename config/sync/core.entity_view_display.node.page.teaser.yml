@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_date
+    - field.field.node.page.field_date_timestamp
+    - field.field.node.page.field_recurring_smart_date_range
+    - field.field.node.page.field_smart_date_range
     - node.type.page
   module:
     - text
@@ -27,4 +31,8 @@ content:
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_date: true
+  field_date_timestamp: true
+  field_recurring_smart_date_range: true
+  field_smart_date_range: true

@@ -1,0 +1,33 @@
+uuid: 13b0c714-d628-4438-894e-eddc2607b71a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_recurring_smart_date_range
+    - node.type.page
+  module:
+    - smart_date
+    - smart_date_recur
+third_party_settings:
+  smart_date_recur:
+    allow_recurring: true
+    month_limit: 12
+id: node.page.field_recurring_smart_date_range
+field_name: field_recurring_smart_date_range
+entity_type: node
+bundle: page
+label: 'Recurring Smart Date Range'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_duration: 60
+    default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_date_type: now
+    default_date: ''
+    min: ''
+    max: ''
+default_value_callback: ''
+settings: {  }
+field_type: smartdate

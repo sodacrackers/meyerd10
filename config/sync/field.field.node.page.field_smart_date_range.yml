@@ -1,0 +1,28 @@
+uuid: 54815385-bec4-4547-8eb6-930dff9a1acb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_smart_date_range
+    - node.type.page
+  module:
+    - smart_date
+id: node.page.field_smart_date_range
+field_name: field_smart_date_range
+entity_type: node
+bundle: page
+label: 'Smart Date Range'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_duration: 90
+    default_duration_increments: "30\r\n60|1 hour\r\n90\r\n120|2 hours\r\ncustom"
+    default_date_type: now
+    default_date: ''
+    min: ''
+    max: ''
+default_value_callback: ''
+settings: {  }
+field_type: smartdate
