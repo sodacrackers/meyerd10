@@ -1,19 +1,19 @@
 # meyerd10
 
-# Initialize a drupal11 recipe
-mkdir my-first-drupal11-app \
-  && cd my-first-drupal11-app \
+# Initialize a drupal10 recipe
+mkdir my-first-drupal10-app \
+  && cd my-first-drupal10-app \
   && lando init \
     --source cwd \
-    --recipe drupal11 \
+    --recipe drupal10 \
     --webroot web \
-    --name my-first-drupal11-app
+    --name my-first-drupal10-app
 
-# Start the environment
+# Start it up
 lando start
 
-# Create latest drupal11 project via composer
-lando composer create-project drupal/recommended-project:11.x tmp && cp -r tmp/. . && rm -rf tmp
+# Create latest drupal10 project via composer
+lando composer create-project drupal/recommended-project:10.x tmp && cp -r tmp/. . && rm -rf tmp
 
 # Composer can timeout on install for some machines, if that happens, run the following command and then re-run the previous lando composer command:
 # lando composer config --global process-timeout 2000
@@ -22,7 +22,7 @@ lando composer create-project drupal/recommended-project:11.x tmp && cp -r tmp/.
 lando composer require drush/drush
 
 # Install drupal
-lando drush site:install --db-url=mysql://drupal11:drupal11@database/drupal11 -y
+lando drush site:install --db-url=mysql://drupal10:drupal10@database/drupal10 -y
 
 # List information about this app
 lando info
