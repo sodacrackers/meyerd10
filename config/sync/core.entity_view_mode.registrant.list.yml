@@ -1,0 +1,13 @@
+uuid: 899278dd-116d-4e6c-b41f-95ea54a9523b
+langcode: en
+status: true
+dependencies:
+  module:
+    - recurring_events_registration
+_core:
+  default_config_hash: KuzTiUWyEaI4Q2_0bDixBe3jjK0Uk3M34tlypTfVArE
+id: registrant.list
+label: List
+description: ''
+targetEntityType: registrant
+cache: true

@@ -1,0 +1,16 @@
+uuid: 362dca3c-5efc-45aa-8689-3d0b78fe3b44
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xP8VaY91nmnEknUt9pfeZr8IEUne06c2mr3Svb-VZhQ
+id: eventinstance_default_title
+label: Title
+type: inherit
+sourceEntityType: eventseries
+destinationEntityType: eventinstance
+sourceEntityBundle: default
+destinationEntityBundle: default
+sourceField: title
+destinationField: null
+plugin: default_inheritance
