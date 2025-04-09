@@ -26,3 +26,7 @@ lando drush site:install --db-url=mysql://drupal10:drupal10@database/drupal10 -y
 
 # List information about this app
 lando info
+
+# Delete all shortcut sets (this will also delete associated links)
+lando drush entity:delete shortcut_set
+lando drush cim -y
