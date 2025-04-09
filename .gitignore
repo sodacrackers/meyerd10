@@ -8,3 +8,6 @@ web/*
 # Ignore everything in web/modules/ except custom/
 web/modules/*
 !web/modules/custom/
+
+# Ignore these special files:
+NOTES.md

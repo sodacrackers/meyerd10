@@ -4,8 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_node_bottom_image
+    - field.field.node.page.field_node_image
+    - field.field.node.page.field_node_media
+    - image.style.thumbnail
     - node.type.page
   module:
+    - image
+    - media_library
     - path
     - text
 _core:
@@ -30,6 +36,29 @@ content:
     weight: 10
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_node_bottom_image:
+    type: image_image
+    weight: 123
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_node_image:
+    type: image_image
+    weight: 122
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_node_media:
+    type: media_library_widget
+    weight: 121
+    region: content
+    settings:
+      media_types: {  }
     third_party_settings: {  }
   path:
     type: path
